@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WarsawCoders | Connecting US Startups with Elite Polish IT Talent</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="WarsawCoders specializes in connecting US startups with elite Polish IT talent. No umbrella company, dedicated HR and agile management, fair rates.">
+  <meta name="keywords" content="Polish developers, IT recruitment, software developers, US startups, tech talent, offshore development, remote developers">
+  
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="WarsawCoders | Elite Polish IT Talent for US Startups">
+  <meta property="og:description" content="Connect your US startup with top Polish developers. No middleman fees, dedicated HR support, and premium talent at fair rates.">
+  <meta property="og:image" content="https://warsawcoders.com/images/social-preview.jpg">
+  <meta property="og:url" content="https://warsawcoders.com">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WarsawCoders | Elite Polish IT Talent for US Startups">
+  <meta name="twitter:description" content="Connect your US startup with top Polish developers. No middleman fees, dedicated HR support, and premium talent at fair rates.">
+  <meta name="twitter:image" content="https://warsawcoders.com/images/social-preview.jpg">
+  
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --secondary: #a855f7;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --light-gray: #e2e8f0;
+      --light-bg: #f1f5f9;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    header {
+      background-color: var(--light);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+      padding: 1rem 0;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    
+    .logo span {
+      color: var(--secondary);
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    
+    .btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .hero {
+      padding: 9rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+      background-color: var(--light-bg);
+    }
+    
+    .hero-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .hero-title {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 3rem;
+      font-weight: 800;
+    }
+    
+    .hero-title .purple-text {
+      color: var(--secondary);
+    }
+    
+    .benefits {
+      padding: 4rem 0;
+      background-color: white;
+    }
+    
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    
+    .benefit-item {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    
+    .benefit-title {
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    
+    .benefit-subtitle {
+      color: var(--gray);
+      font-size: 1.1rem;
+    }
+    
+    .services {
+      padding: 5rem 0;
+      background-color: var(--light-bg);
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .section-header p {
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .service-card {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background-color: rgba(37, 99, 235, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-icon svg {
+      width: 30px;
+      height: 30px;
+      color: var(--primary);
+    }
+    
+    .service-card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+    
+    .service-card p {
+      color: var(--gray);
+    }
+    
+    .cta {
+      padding: 5rem 0;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+    }
+    
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .cta p {
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .cta .btn {
+      background-color: white;
+      color: var(--primary);
+    }
+    
+    .cta .btn:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 5rem 0 2rem;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    
+    .footer-col h4 {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+    
+    .footer-col ul {
+      list-style: none;
+    }
+    
+    .footer-col ul li {
+      margin-bottom: 0.75rem;
+    }
+    
+    .footer-col ul li a {
+      color: var(--light-gray);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+      color: white;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+      color: var(--light-gray);
+    }
+    
+    .hero-image {
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto 0;
+    }
+    
+    .hero-image img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      
+      .cta h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Warsaw<span>Coders</span></div>
+        <div class="nav-links">
+          <a href="#contact" class="btn">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Connecting <span class="purple-text">US Startups</span> with Elite Polish IT Talent</h1>
+        <div class="hero-image">
+          <img src="/api/placeholder/600/400" alt="Laptop showing code with a small plant and glasses nearby" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3 class="benefit-title">No umbrella company involved</h3>
+          <p class="benefit-subtitle">Avoid unnecessary middleman fees.</p>
+        </div>
+        <div class="benefit-item">
+          <h3 class="benefit-title">HR + Agile management</h3>
+          <p class="benefit-subtitle">One person dedicated. Lower costs.</p>
+        </div>
+        <div class="benefit-item">
+          <h3 class="benefit-title">Skilled Polish talent</h3>
+          <p class="benefit-subtitle">Fair rates. No compromise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>We offer comprehensive IT recruitment solutions tailored to meet your specific business needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3>Full-Stack Development Teams</h3>
+          <p>Build complete teams with our curated selection of IT specialists including Developers, Analysts, DevOps Engineers, Operations Specialists, QA Experts, Data Engineers, Solution Architects, and Cybersecurity Professionals.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>Agile Management</h3>
+          <p>Enhance your organizational agility with our experienced Scrum Masters and Agile Coaches. They help teams deliver maximum value through iterative development and maintaining focus on business outcomes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3>HR Specialists with Local Market Knowledge</h3>
+          <p>Find specialized HR professionals with deep understanding of the Polish tech market to efficiently recruit and manage your remote talent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2>Ready to Build Your Dream Team?</h2>
+      <p>Try our HR outsourcing services risk-free. We'll recruit your first IT specialist at no charge—experience our quality firsthand.</p>
+      <a href="#" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>WarsawCoders</h4>
+          <p>Connecting US startups with elite Polish IT talent. Building bridges across borders for innovative teams.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@warsawcoders.com">info@warsawcoders.com</a></li>
+            <li><a href="tel:+48403659944">+48 403 659 944</a></li>
+            <li>Krasinskiego 33</li>
+            <li>Warsaw, Poland</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 WarsawCoders. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "WarsawCoders",
+      "url": "https://www.warsawcoders.com",
+      "logo": "https://www.warsawcoders.com/images/logo.png",
+      "description": "Connecting US Startups with Elite Polish IT Talent",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Krasinskiego 33",
+        "addressLocality": "Warsaw",
+        "addressCountry": "Poland"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+48403659944",
+        "email": "info@warsawcoders.com",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/warsawcoders",
+        "https://twitter.com/warsawcoders"
+      ]
+    }
+  </script>
+</body>
+</html>
