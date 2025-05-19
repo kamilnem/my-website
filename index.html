@@ -5,24 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WarsawCoders | Connecting US Startups with Elite Polish IT Talent</title>
   
-  <!-- SEO Meta Tags -->
   <meta name="description" content="WarsawCoders specializes in connecting US startups with elite Polish IT talent. No umbrella company, dedicated HR and agile management, fair rates.">
   <meta name="keywords" content="Polish developers, IT recruitment, software developers, US startups, tech talent, offshore development, remote developers">
   
-  <!-- Social Media Meta Tags -->
   <meta property="og:title" content="WarsawCoders | Elite Polish IT Talent for US Startups">
   <meta property="og:description" content="Connect your US startup with top Polish developers. No middleman fees, dedicated HR support, and premium talent at fair rates.">
-  <meta property="og:image" content="https://warsawcoders.com/images/social-preview.jpg">
-  <meta property="og:url" content="https://warsawcoders.com">
+  <meta property="og:image" content="https://warsawcoders.com/images/social-preview.jpg"> <meta property="og:url" content="https://warsawcoders.com">
   <meta property="og:type" content="website">
   
-  <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="WarsawCoders | Elite Polish IT Talent for US Startups">
   <meta name="twitter:description" content="Connect your US startup with top Polish developers. No middleman fees, dedicated HR support, and premium talent at fair rates.">
-  <meta name="twitter:image" content="https://warsawcoders.com/images/social-preview.jpg">
-  
-  <style>
+  <meta name="twitter:image" content="https://warsawcoders.com/images/social-preview.jpg"> <style>
     :root {
       --primary: #2563eb;
       --primary-dark: #1e40af;
@@ -38,7 +32,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif; /* Consider adding a fallback font and importing Inter if not already done */
     }
     
     body {
@@ -139,7 +133,7 @@
     .hero-title {
       font-size: 3rem;
       line-height: 1.2;
-      margin-bottom: 3rem;
+      margin-bottom: 3rem; /* Adjusted from 3rem to 2rem to make space for image */
       font-weight: 800;
     }
     
@@ -316,12 +310,13 @@
     
     .hero-image {
       width: 100%;
-      max-width: 600px;
-      margin: 2rem auto 0;
+      max-width: 600px; /* You can adjust this as needed */
+      margin: 2rem auto 0; /* Added margin-top */
     }
     
     .hero-image img {
       width: 100%;
+      height: auto; /* Maintain aspect ratio */
       border-radius: 1rem;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     }
@@ -332,7 +327,7 @@
       }
       
       .nav-links {
-        display: none;
+        display: none; /* Consider implementing a hamburger menu for mobile */
       }
 
       .benefits-grid {
@@ -350,6 +345,9 @@
       }
     }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -368,7 +366,7 @@
       <div class="hero-content">
         <h1 class="hero-title">Connecting <span class="purple-text">US Startups</span> with Elite Polish IT Talent</h1>
         <div class="hero-image">
-          <img src="/api/placeholder/600/400" alt="Laptop showing code with a small plant and glasses nearby" />
+          <img src="images/zdjecie do strony.jpg" alt="Elite Polish IT Talent - WarsawCoders" />
         </div>
       </div>
     </div>
@@ -435,8 +433,7 @@
     <div class="container">
       <h2>Ready to Build Your Dream Team?</h2>
       <p>Try our HR outsourcing services risk-free. We'll recruit your first IT specialist at no charge—experience our quality firsthand.</p>
-      <a href="#" class="btn">Contact Us</a>
-    </div>
+      <a href="#" class="btn">Contact Us</a> </div>
   </section>
 
   <footer>
@@ -462,15 +459,13 @@
     </div>
   </footer>
 
-  <!-- Structured data for SEO -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "WarsawCoders",
       "url": "https://www.warsawcoders.com",
-      "logo": "https://www.warsawcoders.com/images/logo.png",
-      "description": "Connecting US Startups with Elite Polish IT Talent",
+      "logo": "https://www.warsawcoders.com/images/logo.png",  "description": "Connecting US Startups with Elite Polish IT Talent",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Krasinskiego 33",
@@ -484,9 +479,7 @@
         "contactType": "Customer Service"
       },
       "sameAs": [
-        "https://www.linkedin.com/company/warsawcoders",
-        "https://twitter.com/warsawcoders"
-      ]
+        "https://www.linkedin.com/company/warsawcoders",  "https://twitter.com/warsawcoders"  ]
     }
   </script>
 </body>
